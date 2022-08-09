@@ -6,8 +6,8 @@ and got bored by all the repetition?
 ```ruby
 tmp_var = my_method.that_gets_an_integer(foo)
 case
-when tmp_var.even? then foo_bar(baz)
-when tmp_var.prime? then frob(nicate)
+when tmp_var.odd? then foo_bar(baz)
+when tmp_var.zero? then frob(nicate)
 else raise Error
 end
 ```
@@ -17,8 +17,8 @@ Say no more to this, using `Singl.ify!`
 Singl.ify! Integer
 
 case my_method.that_gets_an_integer(foo)
-when Integer.even? then foo_bar(baz)
-when Integer.prime? then frob(nicate)
+when Integer.odd? then foo_bar(baz)
+when Integer.zero? then frob(nicate)
 else raise Error
 end
 ```
@@ -36,19 +36,19 @@ class Foobar
 end
 
 baz = Foobar.new
-Foobar.f(baz)
+Foobar.f baz
 ```
 
 Or, for bonus points, completely ad-hoc:
 
 ```ruby
 case my_method.that_gets_an_integer(foo)
-when Singl.even? then foo_bar(baz)
-when Singl.prime? then frob(nicate)
+when Singl.odd? then foo_bar(baz)
+when Singl.zero? then frob(nicate)
 else raise Error
 end
 
-Singl.f(baz)
+Singl.f baz
 ```
 
 For more info, see the [associated blog post][]
@@ -84,4 +84,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/singl.
+Bug reports and pull requests are welcome on GitHub at https://github.com/RafaelPAndrade/singl.

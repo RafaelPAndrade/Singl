@@ -12,9 +12,9 @@ Gem::Specification.new do |spec|
     Given a class, it will extract all instance methods taking no arguments into singleton methods receiving self as first argument
   DESC
   spec.homepage = "https://web.ist.utl.pt/projects/#{spec.name}"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "http://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/RafaelPAndrade/#{spec.name}"
