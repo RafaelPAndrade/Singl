@@ -53,7 +53,7 @@ Singl.f baz
 
 For more info, see the [associated blog post][]
 
-[associated blog post]: http://web.ist.utl.pt/ist186503/posts/008_Ruby-turning-instance-methods-into-class-methods.html
+[associated blog post]: https://web.ist.utl.pt/ist186503/posts/008_Ruby-turning-instance-methods-into-class-methods.html
 
 
 ## Installation

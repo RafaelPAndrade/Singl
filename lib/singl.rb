@@ -34,7 +34,7 @@ module Singl
   end
 
   # Creates a lambda that sends the method to the first argument given
-  # If no arguments are given, then a lambda is created
+  # If no arguments are given, then the lambda is returned
   def self.method_missing(name, *args)
     l = ->(selv, *inargs) { selv.send(name, *inargs) }
 

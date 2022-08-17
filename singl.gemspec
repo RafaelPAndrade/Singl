@@ -6,6 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "singl"
   spec.version       = Singl::VERSION
   spec.authors       = ["RafaelPAndrade"]
+  spec.license       = "MIT"
 
   spec.summary       = "Turning instance methods into singletons"
   spec.description = <<~DESC
@@ -13,8 +14,6 @@ Gem::Specification.new do |spec|
   DESC
   spec.homepage = "https://web.ist.utl.pt/projects/#{spec.name}"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
-
-  spec.metadata["allowed_push_host"] = "http://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/RafaelPAndrade/#{spec.name}"
@@ -25,8 +24,6 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{\A(?:test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   # For more information and examples about making a new gem, checkout our
